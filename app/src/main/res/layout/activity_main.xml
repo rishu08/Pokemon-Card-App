@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/simple"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/pokesearch"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_weight="4"
+            android:hint="ENTER HERE"
+            android:text="1"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#035f4d" />
+
+        <Button
+            android:id="@+id/btngo"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:text="GO" />
+
+
+    </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+
+       <Button
+           android:id="@+id/btnpre"
+           android:layout_width="70dp"
+           android:layout_height="match_parent"
+           android:textSize="18sp"
+           android:text="PRE"
+          />
+
+       <Button
+           android:id="@+id/btnnext"
+           android:layout_width="70dp"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="220dp"
+           android:text="NEXT"
+           android:textSize="18sp"
+           android:layout_toRightOf="@+id/btnpre"/>
+
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <TextView
+            android:id="@+id/tvresult"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:fontFamily="@font/diplomata"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            app:srcCompat="@drawable/ball" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
